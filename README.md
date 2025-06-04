@@ -10,4 +10,4 @@ After this, we use CLIP to get embeddings for this I-frames, and create vector d
 User text query also transform in emeddings, using CLIP. After this, app extracting k most similar frames and return timestamps for this in moments.
 
 
-We recommended launch this app by docker: docker compose up --build
+We recommended launch this app by docker: ```docker compose up --build```
