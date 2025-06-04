@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  semantic-search-app:
+    # Собирать образ из Dockerfile в текущей директории (.)
+    build: .
+
+    container_name: semantic_video_search
+
+    ports:
+      - "7860:7860"
+
+    volumes:
+      - ./data:/app/data
+
+    environment:
+      - CLIP_API_URL=... # Пример для локального API
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7860
+    restart: unless-stopped

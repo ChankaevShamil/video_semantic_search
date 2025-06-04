@@ -1,0 +1,11 @@
+# app/requirements.txt
+yt-dlp
+faiss-cpu
+requests
+gradio
+Pillow
+numpy
+av    #
+transformers
+torch
+sentencepiece
